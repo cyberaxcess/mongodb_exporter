@@ -4,7 +4,7 @@ MAINTAINER Alan Richert <alan.richert@gmail.com>
 
 RUN curl -s https://glide.sh/get | sh
 COPY . /go/src/github.com/cyberaxcess/mongodb_exporter
-RUN cd /go/src/github.com/cyberaxcess/mongodb_exporter && make
+RUN cd /go/src/github.com/cyberaxcess/mongodb_exporter && make init build
 
 FROM alpine:3.8
 EXPOSE 9001
