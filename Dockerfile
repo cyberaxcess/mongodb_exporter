@@ -7,7 +7,7 @@ COPY . /go/src/github.com/cyberaxcess/mongodb_exporter
 RUN cd /go/src/github.com/cyberaxcess/mongodb_exporter && make init build
 
 FROM alpine:3.8
-EXPOSE 9001
+EXPOSE 9216
 
 RUN apk add --update ca-certificates
 COPY --from=builder /go/src/github.com/cyberaxcess/mongodb_exporter/mongodb_exporter /usr/local/bin/mongodb_exporter
