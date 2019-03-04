@@ -1,9 +1,17 @@
 # Percona MongoDB Exporter
 
+<<<<<<< HEAD
 [![Release](https://github-release-version.herokuapp.com/github/percona/mongodb_exporter/release.svg?style=flat)](https://github.com/cyberaxcess/mongodb_exporter/releases/latest)
 [![Build Status](https://travis-ci.org/percona/mongodb_exporter.svg?branch=master)](https://travis-ci.org/percona/mongodb_exporter)
 [![Go Report Card](https://goreportcard.com/badge/github.com/cyberaxcess/mongodb_exporter)](https://goreportcard.com/report/github.com/cyberaxcess/mongodb_exporter)
 [![CLA assistant](https://cla-assistant.io/readme/badge/percona/mongodb_exporter)](https://cla-assistant.io/percona/mongodb_exporter)
+=======
+[![Release](https://img.shields.io/github/release/percona/mongodb_exporter.svg?style=flat)](https://github.com/percona/mongodb_exporter/releases/latest)
+[![Build Status](https://travis-ci.org/percona/mongodb_exporter.svg?branch=master)](https://travis-ci.org/percona/mongodb_exporter)
+[![codecov.io Code Coverage](https://img.shields.io/codecov/c/github/percona/mongodb_exporter.svg?maxAge=2592000)](https://codecov.io/github/percona/mongodb_exporter?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/percona/mongodb_exporter)](https://goreportcard.com/report/github.com/percona/mongodb_exporter)
+[![CLA assistant](https://cla-assistant.percona.com/readme/badge/percona/mongodb_exporter)](https://cla-assistant.percona.com/percona/mongodb_exporter)
+>>>>>>> 1e86da2187ca5e36dc5a7c6855b2fc8a92cb152c
 
 Based on [MongoDB exporter](https://github.com/dcu/mongodb_exporter) by David Cuadrado (@dcu), but forked for full sharded support and structure changes.
 
@@ -26,6 +34,11 @@ Based on [MongoDB exporter](https://github.com/dcu/mongodb_exporter) by David Cu
 make
 ```
 
+If you don't have or don't want to install the whole GO stuff, use this docker build that creates a container with a freshly built `mongodb_exporter` binary:
+
+```bash
+make docker
+```
 
 ### Running
 
